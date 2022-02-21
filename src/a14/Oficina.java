@@ -35,7 +35,7 @@ public class Oficina implements Runnable{
                     }
                 }
             }
-
+//
             ArrayList<Integer> al = new ArrayList<Integer>();
             for(int x: numBoleto) {
                 al.add(x);

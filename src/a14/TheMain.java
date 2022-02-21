@@ -40,7 +40,7 @@ public class TheMain {
                     break;
                 default:
                     System.out.println("Algunos dicen que la vida es una tombola pero resulta que todo ya esta planeado. \nEn resumen, no se han ofrecido más opciones. Solo tiene disponibles de la 1 a la 4.");
-
+//
 
             }
         }while (opcio!=4);

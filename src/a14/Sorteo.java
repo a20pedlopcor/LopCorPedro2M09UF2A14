@@ -21,7 +21,7 @@ public class Sorteo {
         }
         return null;
     }*/
-
+//
     private ArrayList<Integer> numPremiados = new ArrayList<Integer>();
     static Random rand = new Random();
 
