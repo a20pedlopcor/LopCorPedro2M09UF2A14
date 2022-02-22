@@ -19,7 +19,7 @@ public class TheMain {
                         System.out.println("Dime el nombre de una oficina");
                         sc.nextLine();
                         nombreOficina = sc.nextLine();
-                        Thread.sleep(3000);
+                        //Thread.sleep(3000);
                         Thread oficinaX = new Thread(new Oficina(nombreOficina));
                         oficinaX.start();
                         oficinaX.join();
