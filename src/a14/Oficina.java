@@ -8,7 +8,9 @@ import java.util.stream.IntStream;
 
 public class Oficina implements Runnable{
     String strPrint;
+    Sorteo sorteo;
     boolean otraPersona=true;
+    boolean semafor = false;
     private ArrayList<Integer> numeroBoletoX = new ArrayList<Integer>();
     private List<List<Integer>> boletoXConcursante = new ArrayList<>();
 
@@ -29,13 +31,14 @@ public class Oficina implements Runnable{
                 Thread.sleep((int)Math.random() * (2000 + 1 - 250) + 250);
                 System.out.println("Una persona a llegado a la oficina " + strPrint);
                 for (int i = 0; i < 6; i++) {
-
                     int int_random = rand.nextInt(49);
                     numBoleto[i] = int_random;
-                    for (int j = 0; j < 6; j++) {
+                    for (int j = 0; j < 6 && semafor == false; j++ ) {
                         if (numBoleto[i] == numBoleto[j] && j != i) {
                             numBoleto[i] = rand.nextInt(49);
-
+                        }
+                        else if (numBoleto[i] != numBoleto[j]) {
+                            semafor = true;
                         }
                     }
                 }
@@ -50,7 +53,7 @@ public class Oficina implements Runnable{
 
                 boletoXConcursante.add(al);
 
-                System.out.println("Actualmente los boletos " + boletoXConcursante + " han sido apostados en la oficina");
+                //System.out.println("Actualmente los boletos " + boletoXConcursante + " han sido apostados en la oficina");
 
                 //Randomizar la llegada de otra persona
                 otraPersona=rand.nextBoolean();
@@ -61,6 +64,8 @@ public class Oficina implements Runnable{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
+
         //Pide numero a la persona
         //Empiezan apuestas
             //Saber el numero de apustas

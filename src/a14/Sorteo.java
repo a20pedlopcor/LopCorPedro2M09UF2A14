@@ -1,9 +1,27 @@
 package a14;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Sorteo {
+/*    List<List<Integer>> boletoEnSorteo = new ArrayList<>();
+
+    public Sorteo (){
+        this.boletoEnSorteo=boletoEnSorteo;
+    }*/
+
+    /*public List setOptenerBoleto (){
+        return boletoEnSorteo;
+    }*/
+
+
+/*    public void muestraBoletos (){
+        for (List i : boletoEnSorteo) {
+            System.out.println(i);
+        }
+    }*/
+
     /*    private ArrayList<Boleto> boletoX = new ArrayList<Boleto>();
      *//*public Sorteo (){
         //El sorteo se hace cada 30 segundos
@@ -24,6 +42,8 @@ public class Sorteo {
 //
     private ArrayList<Integer> numPremiados = new ArrayList<Integer>();
     static Random rand = new Random();
+
+
 
     public void setNumPremiados(Integer numPremio) {
         numPremiados.add(numPremio);
