@@ -27,6 +27,7 @@ public class TheMain {
                         opcio = sc.nextInt();
                     } while (opcio == 1);
                     System.out.println("Saliendo del creador de oficinas");
+
                     break;
                 case 2:
                     //Estado de cuentas

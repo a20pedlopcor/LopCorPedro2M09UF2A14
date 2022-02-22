@@ -5,22 +5,6 @@ import java.util.List;
 import java.util.Random;
 
 public class Sorteo {
-/*    List<List<Integer>> boletoEnSorteo = new ArrayList<>();
-
-    public Sorteo (){
-        this.boletoEnSorteo=boletoEnSorteo;
-    }*/
-
-    /*public List setOptenerBoleto (){
-        return boletoEnSorteo;
-    }*/
-
-
-/*    public void muestraBoletos (){
-        for (List i : boletoEnSorteo) {
-            System.out.println(i);
-        }
-    }*/
 
     /*    private ArrayList<Boleto> boletoX = new ArrayList<Boleto>();
      *//*public Sorteo (){

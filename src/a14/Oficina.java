@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 
 public class Oficina implements Runnable{
     String strPrint;
-    Sorteo sorteo;
+    SorteoB sorteoX;
     boolean otraPersona=true;
     boolean semafor = false;
     private ArrayList<Integer> numeroBoletoX = new ArrayList<Integer>();
@@ -65,6 +65,8 @@ public class Oficina implements Runnable{
             e.printStackTrace();
         }
 
+//        sorteoX.setBoletoEnSorteo(boletoXConcursante);
+//        sorteoX.getBoletoEnSorteo();
 
         //Pide numero a la persona
         //Empiezan apuestas
