@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class TheMain {
     static Scanner sc = new Scanner(System.in);
+    static EstadoCuentas cuentas;
     public static void main (String[] args) throws InterruptedException {
         int opcio;
         String nombreOficina;
@@ -31,6 +32,7 @@ public class TheMain {
                     break;
                 case 2:
                     //Estado de cuentas
+                    cuentas.getBoletoEnSorteo();
                     break;
                 case 3:
                     //Escrutiño (saber quien ha ganado)

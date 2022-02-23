@@ -13,10 +13,8 @@ public class Oficina implements Runnable{
     boolean semafor = false;
     private ArrayList<Integer> numeroBoletoX = new ArrayList<Integer>();
     private List<List<Integer>> boletoXConcursante = new ArrayList<>();
-
-    // private int boletoA[] = new int[];
+    private EstadoCuentas cuentasOficina;
     private int numBoleto[] = new int[6];
-    private int secuenciaNumerica;
     Random rand = new Random();
 
     public Oficina(String strP) {
@@ -64,7 +62,8 @@ public class Oficina implements Runnable{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-
+        //No hay forma de estraer los numeros del hilo aun. Es un problema serio
+        cuentasOficina.setBoletoEnSorteo(new ArrayList<>(boletoXConcursante));
 //        sorteoX.setBoletoEnSorteo(boletoXConcursante);
 //        sorteoX.getBoletoEnSorteo();
 
